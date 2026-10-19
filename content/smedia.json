@@ -1,0 +1,22 @@
+{
+  "slot1": {
+    "image": "/i01.webp",
+    "video": ""
+  },
+  "slot2": {
+    "image": "/i04.webp",
+    "video": ""
+  },
+  "slot3": {
+    "image": "/i07.webp",
+    "video": ""
+  },
+  "slot4": {
+    "image": "/i11.webp",
+    "video": ""
+  },
+  "slot5": {
+    "image": "/i13.webp",
+    "video": ""
+  }
+}
