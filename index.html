@@ -9,15 +9,6 @@ html,body{margin:0;background:#000}
 .slot{position:absolute;left:0;width:100%;overflow:hidden;display:none;background:#000}
 .slot.on{display:block}
 .slot img,.slot video{width:100%;height:100%;object-fit:cover;display:block}
-
-.gallery{max-width:1920px;margin:0 auto;background:#000;padding:48px 4% 64px}
-.gallery h2{color:#fff;font-family:Arial,Helvetica,sans-serif;font-size:32px;margin:0 0 28px;text-align:center;letter-spacing:.04em}
-.gallery .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
-.gallery .grid img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:6px;cursor:pointer;transition:transform .25s ease,opacity .25s ease}
-.gallery .grid img:hover{transform:scale(1.03);opacity:.9}
-.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:999;align-items:center;justify-content:center;cursor:zoom-out}
-.lightbox.on{display:flex}
-.lightbox img{max-width:94vw;max-height:94vh;object-fit:contain}
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head><body>
@@ -12210,53 +12201,6 @@ html,body{margin:0;background:#000}
 
 <div class="slot" data-slot="1" style="top:0.0000%;height:7.7274%"></div><div class="slot" data-slot="2" style="top:26.5163%;height:7.9649%"></div><div class="slot" data-slot="3" style="top:34.6273%;height:4.1560%"></div><div class="slot" data-slot="4" style="top:46.1363%;height:10.9700%"></div><div class="slot" data-slot="5" style="top:91.4048%;height:8.5952%"></div>
 </div>
-
-<section class="gallery">
-<h2>Фотогалерея</h2>
-<div class="grid">
-<img src="/i00.webp" alt="Фото 1" loading="lazy">
-<img src="/i01.webp" alt="Фото 2" loading="lazy">
-<img src="/i02.webp" alt="Фото 3" loading="lazy">
-<img src="/i03.webp" alt="Фото 4" loading="lazy">
-<img src="/i04.webp" alt="Фото 5" loading="lazy">
-<img src="/i05.webp" alt="Фото 6" loading="lazy">
-<img src="/i06.webp" alt="Фото 7" loading="lazy">
-<img src="/i07.webp" alt="Фото 8" loading="lazy">
-<img src="/i08.webp" alt="Фото 9" loading="lazy">
-<img src="/i09.webp" alt="Фото 10" loading="lazy">
-<img src="/i10.webp" alt="Фото 11" loading="lazy">
-<img src="/i11.webp" alt="Фото 12" loading="lazy">
-<img src="/i12.webp" alt="Фото 13" loading="lazy">
-<img src="/i13.webp" alt="Фото 14" loading="lazy">
-<img src="/i14.webp" alt="Фото 15" loading="lazy">
-<img src="/i15.webp" alt="Фото 16" loading="lazy">
-<img src="/i16.webp" alt="Фото 17" loading="lazy">
-<img src="/i17.webp" alt="Фото 18" loading="lazy">
-<img src="/i18.webp" alt="Фото 19" loading="lazy">
-<img src="/i19.webp" alt="Фото 20" loading="lazy">
-<img src="/i20.webp" alt="Фото 21" loading="lazy">
-<img src="/i21.webp" alt="Фото 22" loading="lazy">
-<img src="/i22.webp" alt="Фото 23" loading="lazy">
-<img src="/i23.webp" alt="Фото 24" loading="lazy">
-<img src="/i24.webp" alt="Фото 25" loading="lazy">
-<img src="/i25.webp" alt="Фото 26" loading="lazy">
-<img src="/i26.webp" alt="Фото 27" loading="lazy">
-<img src="/i27.webp" alt="Фото 28" loading="lazy">
-<img src="/i28.webp" alt="Фото 29" loading="lazy">
-<img src="/i29.webp" alt="Фото 30" loading="lazy">
-</div>
-</section>
-<div class="lightbox" id="lightbox"><img alt=""></div>
-<script>
-(function(){
- var lb=document.getElementById('lightbox'),lbi=lb.querySelector('img');
- document.querySelectorAll('.gallery .grid img').forEach(function(im){
-  im.addEventListener('click',function(){lbi.src=im.src;lb.classList.add('on')});
- });
- lb.addEventListener('click',function(){lb.classList.remove('on');lbi.src=''});
-})();
-</script>
-
 <script>
 fetch('content/media.json',{cache:'no-cache'}).then(r=>r.json()).then(d=>{
  document.querySelectorAll('.slot').forEach(el=>{
