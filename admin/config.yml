@@ -1,0 +1,51 @@
+backend:
+  name: git-gateway
+  branch: main
+local_backend: true
+media_folder: uploads
+public_folder: /uploads
+locale: ru
+collections:
+  - name: media
+    label: Видео и фото
+    files:
+      - name: slots
+        label: "5 блоков для видео/фото"
+        file: content/media.json
+        format: json
+        fields:
+          - label: "1 — Главный экран (ноутбук на камнях)"
+            name: slot1
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Видео (mp4/webm)", name: video, widget: file, required: false}
+              - {label: "Фото (если видео нет — показывается оно)", name: image, widget: image, required: false}
+          - label: "2 — Интерфейс (ноутбук на синем фоне)"
+            name: slot2
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Видео (mp4/webm)", name: video, widget: file, required: false}
+              - {label: "Фото (если видео нет — показывается оно)", name: image, widget: image, required: false}
+          - label: "3 — Карточки направлений"
+            name: slot3
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Видео (mp4/webm)", name: video, widget: file, required: false}
+              - {label: "Фото (если видео нет — показывается оно)", name: image, widget: image, required: false}
+          - label: "4 — Телефон"
+            name: slot4
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Видео (mp4/webm)", name: video, widget: file, required: false}
+              - {label: "Фото (если видео нет — показывается оно)", name: image, widget: image, required: false}
+          - label: "5 — Три телефона"
+            name: slot5
+            widget: object
+            collapsed: false
+            fields:
+              - {label: "Видео (mp4/webm)", name: video, widget: file, required: false}
+              - {label: "Фото (если видео нет — показывается оно)", name: image, widget: image, required: false}
