@@ -1,7 +1,22 @@
-   {
-     "slot1": { "image": "", "video": "" },
-     "slot2": { "image": "", "video": "" },
-     "slot3": { "image": "", "video": "" },
-     "slot4": { "image": "", "video": "" },
-     "slot5": { "image": "", "video": "" }
-   }
+{
+  "slot1": {
+    "image": "",
+    "video": ""
+  },
+  "slot2": {
+    "image": "",
+    "video": ""
+  },
+  "slot3": {
+    "image": "",
+    "video": "/uploads/запись-экрана-2026-10-19-в-15.51.28.mov"
+  },
+  "slot4": {
+    "image": "",
+    "video": "/uploads/моб1.mp4"
+  },
+  "slot5": {
+    "image": "",
+    "video": "/uploads/моб2.mp4"
+  }
+}
